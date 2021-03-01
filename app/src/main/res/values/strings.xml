@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">guessTheNumber</string>
+    <string name="title_name">Guess The Number</string>
+    <string name="start">start</string>
+    <string name="exit">exit</string>
+    <string name="send">send</string>
+    <string name="score">score : </string>
+    <string name="level">1 to </string>
+
+</resources>

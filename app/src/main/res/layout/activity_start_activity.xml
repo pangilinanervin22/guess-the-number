@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".start_activity"
+    android:background="@color/black"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textSize="30sp"
+        android:textColor="#FF8707"
+        />
+
+    <TextView
+        android:id="@+id/guess_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="#FF8707"
+        android:layout_marginLeft="95dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:textSize="40sp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:layout_marginRight="55dp"
+        />
+
+    <TextView
+        android:id="@+id/health_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textSize="40sp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:layout_marginRight="75dp"
+        />
+
+    <ImageView
+        android:id="@+id/health_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/health"
+        android:layout_alignParentEnd="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="@drawable/monitor_screen"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 to "
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/guess_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/guess_text"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="190dp"
+            android:padding="2dp"
+            android:shadowColor="@color/secondary"
+            android:shadowDx="5"
+            android:shadowDy="10"
+            android:shadowRadius="2"
+            android:text="number"
+            android:textAlignment="center"
+            android:textColor="#EAECE8"
+            android:textSize="47sp" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/send_number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:inputType="number"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#FF8707"
+        android:text="@string/send"
+        android:textSize="30sp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="@drawable/buttonradius"
+        />
+
+</RelativeLayout>
